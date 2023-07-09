@@ -30,3 +30,20 @@ def maior_palindrome(string):
             if eh_palindromo(substring) and len(substring) > len(maior_palindromo):
                 maior_palindromo = substring
     return maior_palindromo
+
+def formatar_frase(frase):
+    frase = frase.lower()
+    pontuacoes_conhecidas = ['.', '!', '?', ':']
+
+    def capitalizar_palavra(palavra):
+        return palavra.capitalize()
+
+    def verificar_capitalizacao_anterior(index, palavra):
+        if index == 0 or palavra[index - 1][-1] in pontuacoes_conhecidas:
+            return True
+        return False
+
+    palavras = frase.split()
+    nova_frase = [capitalizar_palavra(palavra) if verificar_capitalizacao_anterior(i, palavras) else palavra for
+                  i, palavra in enumerate(palavras)]
+    return ' '.join(nova_frase)
