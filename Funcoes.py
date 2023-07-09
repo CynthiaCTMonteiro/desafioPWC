@@ -7,8 +7,7 @@ def verificar_string_nula_vazia(objeto):
 
 def inverter_palavras(sentence):
     words = sentence.split()
-    reversed_words = ' '.join(words[::-1])
-    return reversed_words
+    return ' '.join(words[::-1])
 
 
 def remover_duplicados(frase):
