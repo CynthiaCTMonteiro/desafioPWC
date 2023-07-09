@@ -11,3 +11,9 @@ def inverter_palavras(sentence):
 
 
 
+def remover_duplicados(frase):
+    unique_chars = ""
+    for char in frase:
+        if char not in unique_chars:
+            unique_chars += char
+    return unique_chars
