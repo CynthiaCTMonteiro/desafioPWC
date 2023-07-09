@@ -1,5 +1,5 @@
 # Manipulação de Strings em Python
-# README.md
+
 
 ## Conteúdo
 
