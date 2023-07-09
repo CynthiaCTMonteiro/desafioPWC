@@ -7,8 +7,8 @@ def verificar_string_nula_vazia(objeto):
 
 def inverter_palavras(sentence):
     words = sentence.split()
-    return ' '.join(words[::-1])
-
+    reversed_words = ' '.join(words[::-1])
+    return reversed_words
 
 
 def remover_duplicados(frase):
@@ -17,6 +17,7 @@ def remover_duplicados(frase):
         if char not in unique_chars:
             unique_chars += char
     return unique_chars
+
 
 def eh_palindromo(substring):
     return substring == substring[::-1]
@@ -31,8 +32,8 @@ def maior_palindrome(string):
                 maior_palindromo = substring
     return maior_palindromo
 
+
 def formatar_frase(frase):
-    frase = frase.lower()
     pontuacoes_conhecidas = ['.', '!', '?', ':']
 
     def capitalizar_palavra(palavra):
@@ -47,3 +48,24 @@ def formatar_frase(frase):
     nova_frase = [capitalizar_palavra(palavra) if verificar_capitalizacao_anterior(i, palavras) else palavra for
                   i, palavra in enumerate(palavras)]
     return ' '.join(nova_frase)
+
+
+def anagrama_palindrome(string):
+    char_count = contar_caracteres(string)
+    odd_count = contar_impares(char_count)
+    return 'true' if odd_count <= 1 else 'false'
+
+
+def contar_caracteres(string):
+    char_count = {}
+    for char in set(string):
+        char_count[char] = string.count(char)
+    return char_count
+
+
+def contar_impares(char_count):
+    odd_count = 0
+    for count in char_count.values():
+        if count % 2 != 0:
+            odd_count += 1
+    return odd_count
