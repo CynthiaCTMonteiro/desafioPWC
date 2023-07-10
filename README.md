@@ -9,7 +9,7 @@
 * [É Palíndromo](#é-palíndromo)
 * [Maior Palíndromo](#maior-palíndromo)
 * [Formatar Frase](#formatar-frase)
-* [Anagrama Palíndrome](#anagrama-palíndrome)
+* [Anagrama Palíndromo](#anagrama-palíndrome)
 * [Contar Caracteres](#contar-caracteres)
 * [Contar Ímpares](#contar-ímpares)
 
@@ -95,7 +95,7 @@ def formatar_frase(frase):
     return ' '.join(nova_frase)
 ```
 
-## Anagrama Palíndrome
+## Anagrama Palíndromo
 
 Esta função verifica se é possível formar um palíndromo com os caracteres de uma string.
 
@@ -181,7 +181,7 @@ Output4 = formatar_frase(Input4)
 print(Output4)  # Resultado: "Hello. How are you? I'm fine, thank you."
 ```
 
-## Exercício 5: Anagrama Palíndrome
+## Exercício 5: Anagrama Palíndromo
 
 Esta função verifica se a string fornecida é um anagrama de um palíndromo.
 
@@ -232,7 +232,7 @@ Quando executado, o script cria uma janela contendo um campo de entrada de texto
 * **Remover Duplicados:** remove todos os caracteres duplicados na string.
 * **Maior Palindromo:** encontra a maior substring palíndroma na string.
 * **Capitalize Frase:** capitaliza a primeira letra de cada frase na string.
-* **Anagrama Palindrome:** verifica se a string é um anagrama de um palíndromo.
+* **Anagrama Palindromo:** verifica se a string é um anagrama de um palíndromo.
 * **Testar Funções:** executa todos os testes unitários e exibe os resultados em uma nova janela.
 
 ## Código GUI
